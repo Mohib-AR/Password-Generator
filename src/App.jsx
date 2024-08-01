@@ -28,7 +28,7 @@ function App() {
     if (charac) str += "~!@#$%^&*()_-+=?><';{}|,./`";
     if (numbers) str += "1234567890";
     for (let i = 0; i < length; i++) {
-      let ind = Math.floor(Math.random() * str.length);
+      let ind = Math.floor(Math.random() * str.length + 1);
       pass += str[ind];
     }
     setPassword(pass);
@@ -40,6 +40,7 @@ function App() {
 
   return (
     <>
+      //asdasdsad
       <div className="h-screen flex flex-col pt-36 items-center bg-gradient-to-r from-blue-500 to-purple-600">
         <p className="text-5xl font-bold text-white font-serif mb-8">
           PASSWORD GENERATOR
